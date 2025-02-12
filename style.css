@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f3f7f0;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 30px 20px;
+  font-size: 1.4em;
+  border-bottom: 5px solid #81C784;
+}
+
+.intro, .benefits, .cases, .cta {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.intro img, .benefits img, .cases img {
+  width: 80%;
+  max-width: 500px;
+  margin: 15px 0;
+  border-radius: 10px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.zoom-in {
+  transform: scale(0.9);
+  animation: zoomIn 2s forwards;
+}
+
+.slide-in {
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.benefits ul li {
+  background-color: #dff0d8;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.cta {
+  background-color: #81C784;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.cta button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-hover:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.social-media {
+  padding: 20px;
+  background-color: #f3f7f0;
+  text-align: center;
+}
+
+.social-media h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #4CAF50;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.instagram { background-color: #e4405f; }
+.social-icon.twitter { background-color: #1da1f2; }
+.social-icon.linkedin { background-color: #0077b5; }
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9em;
+}
